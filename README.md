@@ -13,6 +13,10 @@ Proyecto de aprendizaje computacional para comparar clasificadores que predicen 
 
 Las variables y una carga verificable del dataset se describen en [`notebooks/Clasificadores.ipynb`](notebooks/Clasificadores.ipynb).
 
+## Modelado
+
+El notebook compara regresión logística, redes neuronales y K vecinos más cercanos (KNN). Cada clasificador usa un pipeline que estandariza las variables numéricas y codifica las variables de texto dentro de la validación cruzada. Se seleccionan hiperparámetros mediante validación cruzada estratificada de cinco particiones, con F1 para `yes` como criterio; se muestran la tabla y la gráfica de todos los valores evaluados, además de las predicciones y métricas para train y test.
+
 ## Ejecución
 
 Desde la carpeta del proyecto, instala las dependencias y abre el notebook:
